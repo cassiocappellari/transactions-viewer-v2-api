@@ -14,7 +14,7 @@ const fileReader = async (fileBuffer: Buffer) => {
   const transactions: Transaction[] = [];
 
   for await (let line of transactionsLine) {
-    const transactionLineSplit = line.split(",");
+    const transactionLineSplit = line.replace(/, /g, '-').split(",");
 
     transactions.push({
       id: transactionLineSplit[0],
