@@ -1,0 +1,24 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Transactions {
+  id                String  @id @default(uuid())
+  account           String?
+  description       String?
+  category          String?
+  reference         String?
+  currency          String?
+  amount            Float?
+  status            String?
+  transactionDate   DateTime?
+  createdAt         DateTime?
+  updatedAt         DateTime?
+
+  @@map("transactions")
+}
