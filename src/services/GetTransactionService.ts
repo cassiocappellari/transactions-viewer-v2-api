@@ -15,11 +15,11 @@ class GetTransactionService {
     const transactions = await client.transactions.findMany({
       orderBy: [
         {
-          createdAt: 'asc'
+          transactionDate: 'asc'
         }
       ],
       where: {
-        createdAt: {
+        transactionDate: {
           gte: formatedDates.formattedStartDate,
           lte: formatedDates.formattedEndDate
         }
