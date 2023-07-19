@@ -15,7 +15,7 @@ type Transaction {
 }
 
 type Query {
-  getAllTransactions: [Transaction],
+  getAllTransactions(size: Int, skip: Int): [Transaction],
   getTransactionsByDateRange(startMonth: String, endMonth: String): [Transaction],
   getTransactionById(id: ID): Transaction
 }
