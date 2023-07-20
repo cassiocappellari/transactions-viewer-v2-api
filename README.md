@@ -116,7 +116,7 @@ $ npx prisma migrate dev
 
 - GitHub: [@cassiocappellari](https://github.com/cassiocappellari)
 - LinkedIn: [@cassiocappellari](https://www.linkedin.com/in/cassiocappellari/)
-- Dev Community: [@cassiocappellari](https://dev.to/cassiocappellari)
+- Dev Community ([Basic Concepts of Node.js](https://dev.to/cassiocappellari/basic-concepts-of-node-js-pch) | [Fundamentals of REST API](https://dev.to/cassiocappellari/fundamentals-of-rest-api-2nag)): [@cassiocappellari](https://dev.to/cassiocappellari)
 
 ---
 
